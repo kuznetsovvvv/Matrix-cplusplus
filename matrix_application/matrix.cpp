@@ -69,7 +69,6 @@ int main() {
 
         inputFile.close();
     }
-    system("pause");
     return 0;
 
 }

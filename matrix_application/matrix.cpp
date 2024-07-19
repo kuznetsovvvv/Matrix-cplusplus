@@ -3,7 +3,7 @@
 #include <fstream>
 #include <algorithm>
 #include <ctime>
-#include"Cmatrix.h"
+#include"cmatrix.h"
 #define p 7
 using namespace std;
 

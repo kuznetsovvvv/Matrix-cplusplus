@@ -1,4 +1,4 @@
-#include "Cmatrix.h"
+#include "cmatrix.h"
 
    CMatrix::CMatrix()
     {

@@ -13,3 +13,4 @@ target_include_directories(matrix PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../matrix_l
 
 # Link against the matrix library
 target_link_libraries(matrix matrix_lib)  # Link here!
+ find_package(matrix_lib REQUIRED) 

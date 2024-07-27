@@ -19,10 +19,10 @@ jobs:
     - name: Install lcov
       run: sudo apt-get install -y lcov
 
-    - name: Config matrix_lib with tests
+    - name: Config matrixlib with tests
       run: cmake -H. -B ${{github.workspace}}/build -DBUILD_TESTS=ON -DCMAKE_CXX_FLAGS='--coverage'
 
-    - name: Build matrix_lib
+    - name: Build matrixlib
       run: cmake --build ${{github.workspace}}/build
 
     - name: Run tests
@@ -34,7 +34,7 @@ jobs:
         lcov --list coverage.info
 
     - name: Coveralls
-      uses: coverallsapp/github-action@master
+      uses: coverallsapp/github-action@main
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         path-to-lcov: ${{ github.workspace }}/coverage.info

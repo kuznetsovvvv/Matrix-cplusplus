@@ -48,7 +48,7 @@ TEST(CMatrixTest, GetColls_EmptyMatrix){
     EXPECT_EQ(matrix.Get_colls(), 0);
 }
 
-TEST(CMatrixTest, GetColls_EmptyMatrix){
+TEST(CMatrixTest, GetColls_NonEmptyMatrix){
     CMatrix matrix(3, 4);
 EXCEPT_EQ(matrix.Get_colls(), 4);
 }

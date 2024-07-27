@@ -4,7 +4,6 @@
 #define p 7
 using namespace std;
 class CMatrix {
-
 public:
 int rows, colls; // строки, столбцы
     int** matrix;

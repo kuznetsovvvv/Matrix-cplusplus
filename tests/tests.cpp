@@ -41,3 +41,14 @@ TEST(CMatrixTest, GetRows_NonEmptyMatrix) {
     CMatrix matrix(3, 4);
     EXPECT_EQ(matrix.Get_rows(), 3);
 }
+
+
+TEST(CMatrixTest, GetColls_EmptyMatrix){
+    CMatrix matrix;
+    EXPECT_EQ(matrix.Get_colls(), 0);
+}
+
+TEST(CMatrixTest, GetColls_EmptyMatrix){
+    CMatrix matrix(3,4);
+EXCEPT_EQ(matrix.Get_colls(),4);
+}

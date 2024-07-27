@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Add subdirectories for your application and library
 add_subdirectory(matrix_application)
-add_subdirectory(matrix_lib)
+
 
 if(BUILD_TESTS)
   add_compile_options(--coverage)

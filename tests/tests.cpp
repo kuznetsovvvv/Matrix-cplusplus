@@ -31,3 +31,13 @@ TEST(CMatrixTest, YmenchMatrix) {
     ASSERT_EQ(matrix.rows, 2);
     ASSERT_EQ(matrix.colls, 3);
 }
+
+TEST(CMatrixTest, GetRows_EmptyMatrix) {
+    CMatrix matrix;
+    EXPECT_EQ(matrix.Get_rows(), 0);
+}
+
+TEST(CMatrixTest, GetRows_NonEmptyMatrix) {
+    CMatrix matrix(3, 4);
+    EXPECT_EQ(matrix.Get_rows(), 3);
+}

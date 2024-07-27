@@ -13,6 +13,10 @@ if(BUILD_TESTS)
   add_compile_options(--coverage)
 endif()
 
+add_library(matrix_lib STATIC ${CMAKE_CURRENT_SOURCE_DIR}/matrix_lib/cmatrix.cpp )
+target_include_directories(matrix_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/matrix_lib)
+target_link_libraries(matrix_lib gcov)
+
 if(BUILD_TESTS)
   enable_testing()
   add_subdirectory(third-party/gtest)

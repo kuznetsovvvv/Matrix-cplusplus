@@ -1,0 +1,6 @@
+/home/misha/dev/Matrix/matrix_application/build/CMakeFiles/matrix.dir
+/home/misha/dev/Matrix/matrix_application/build/CMakeFiles/edit_cache.dir
+/home/misha/dev/Matrix/matrix_application/build/CMakeFiles/rebuild_cache.dir
+/home/misha/dev/Matrix/matrix_application/build/matrix_lib_dir/CMakeFiles/matrix_lib.dir
+/home/misha/dev/Matrix/matrix_application/build/matrix_lib_dir/CMakeFiles/edit_cache.dir
+/home/misha/dev/Matrix/matrix_application/build/matrix_lib_dir/CMakeFiles/rebuild_cache.dir

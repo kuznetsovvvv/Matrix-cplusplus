@@ -5,20 +5,27 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-
-
   workflow_dispatch:
 
 jobs:
-  build:
+  build_lib: # Build the library
     runs-on: ubuntu-latest
-  
-    
     steps:
     - name: checkout
       uses: actions/checkout@v3
-    
-    - name: Build a Matrixlib gcc
+    - name: Build matrix_lib
+      run: |
+        cmake -B build
+        cmake --build build
+      shell: bash
+      working-directory: matrix_lib
+  build_app: # Build the application
+    runs-on: ubuntu-latest
+    needs: build_lib # Depends on the library build
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+    - name: Build matrix_application
       run: |
         cmake -H. -B_build -DCMAKE_C_COMPILER=gcc
         cmake --build _build

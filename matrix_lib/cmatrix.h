@@ -18,6 +18,7 @@ int rows, colls; // строки, столбцы
     void print(string n);
     void ymench();
     void up();
+   friend ostream& operator<<(ostream& os, const CMatrix& matr);
 
     int Get_rows();
     int Get_colls();

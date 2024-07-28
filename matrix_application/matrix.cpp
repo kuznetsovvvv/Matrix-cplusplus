@@ -65,7 +65,9 @@ int main() {
 
         M7.up();
         M7.print("M7");
-
+  cout << "M8:" << endl;
+  CMatrix M8(r, c, matriza);
+  cout << M8 << endl;
 
         inputFile.close();
     }

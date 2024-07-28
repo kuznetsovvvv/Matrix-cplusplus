@@ -266,6 +266,56 @@
         }
     }
 
+    ostream& operator<<(ostream& os, const CMatrix& matr) {
+        if (matr.rows == 0 || matr.colls == 0) {
+            return os<< "матрицы не существует!" << endl;
+        }
+        else {
+
+
+
+            bool isEmpty = true;
+            for (int i = 0; i < matr.rows; i++) {
+                for (int j = 0; j < matr.colls; j++) {
+                    if (matr.matrix[i][j] > 0) {
+                        isEmpty = false;
+                    }
+
+
+
+                }
+            }
+
+
+            if (isEmpty == false) {
+                 os << endl;
+                for (int i = 0; i < matr.rows; i++)
+                {
+                    int printedElements = 0;
+                     os << "( ";
+                    for (int j = 0; j < matr.colls; j++)
+                    {
+                        printedElements++;
+                        cout << matr.matrix[i][j] << " ";
+                        if (printedElements == matr.colls) {
+                            os << ")";
+                            os << endl;
+                            printedElements = 0;
+                        }
+
+                    }
+                }
+            }
+            else {
+                return os << "в матрице нет элементов!" << endl;
+            }
+        }
+
+
+
+
+        return os;
+    }
 
     CMatrix::~CMatrix() {
         cout << endl;

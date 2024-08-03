@@ -28,5 +28,5 @@
 **В отдельном файле должен быть написан тест на данный класс
 (функция main).**
 
-**Coverage by tests:**
+**Coverage by tests:** 
 [![Coverage Status](https://coveralls.io/repos/github/kuznetsovvvv/Matrix/badge.svg?branch=main)](https://coveralls.io/github/kuznetsovvvv/Matrix?branch=main)

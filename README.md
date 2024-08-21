@@ -25,8 +25,7 @@
 **Каждый класс должен быть описан в 2-х файлах** (заголовочном и
 реализации): cmatrix.h и cmatrix.cpp
 
-**В отдельном файле должен быть написан тест на данный класс
-(функция main).**
+**В отдельном файле должен быть написан тест на данный класс.**
 
 **Coverage by tests:** 
 [![Coverage Status](https://coveralls.io/repos/github/kuznetsovvvv/Matrix/badge.svg?branch=main)](https://coveralls.io/github/kuznetsovvvv/Matrix?branch=main)
